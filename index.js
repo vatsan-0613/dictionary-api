@@ -30,12 +30,12 @@ const fillCard = (data) => {
     audio.src = audioURL;
     audio.play();
   });
+  card.style.visibility = "visible";
   titleText.innerHTML = title + '<br><span id="sub">' + phonetic + "</span>";
   const meanings = data[0].meanings;
   meanings.forEach((partsOfSpeech) => {
     const pts = partsOfSpeech.partOfSpeech;
     const def = partsOfSpeech.definitions[0].definition;
-
     const ele = document.createElement("li");
     ele.className = "list-group-item";
     ele.innerHTML = '<span class="font-weight-bold">' + pts + ": </span>" + def;
@@ -59,6 +59,5 @@ const request = (word) => {
 const getWord = () => {
   const word = document.querySelector("input").value;
   group.innerHTML = "";
-  card.style.visibility = "visible";
   request(word);
 };
