@@ -1,0 +1,53 @@
+
+body{
+    background-color: #FBEEAC;
+}
+
+h1{
+    color : #1D5D9B;
+font-family: 'Poppins', sans-serif;
+font-weight: bolder;
+margin-top : 2rem;
+margin-bottom: 3rem;
+    
+}
+
+#card-title{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1;
+    float: left;
+}
+
+.audio-btn{
+    border-radius: 50% !important;
+    height: 40px;
+    float: right;
+}
+
+.input-group{
+    width : 20rem;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+#sub{
+    color: lightblue;
+    font-size:medium;
+}
+
+.btn-search{
+    border-color: #75C2F6;
+    color: #1D5D9B;
+}
+
+.btn-search:hover{
+    background-color: #75C2F6;
+}
+
+.card{
+    visibility: hidden;
+}
