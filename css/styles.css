@@ -51,3 +51,7 @@ margin-bottom: 3rem;
 .card{
     visibility: hidden;
 }
+
+.list-group-item{
+    border-bottom-color: #F4D160;
+}
