@@ -56,8 +56,18 @@ const request = (word) => {
     });
 };
 
+const word = document.querySelector("input");
+
 const getWord = () => {
-  const word = document.querySelector("input").value;
   group.innerHTML = "";
-  request(word);
+  request(word.value);
 };
+
+
+word.addEventListener("keypress", (event)=>{
+  console.log(event.key);
+  if(event.key == "Enter") {
+    getWord();
+  }
+})
+
